@@ -1,5 +1,6 @@
 package modulo4.ddam.markmota.tk.practica1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.main_activity_btn_times).setOnClickListener(this);
         findViewById(R.id.main_activity_btn_equal).setOnClickListener(this);
         findViewById(R.id.main_activity_btn_clear).setOnClickListener(this);
+        findViewById(R.id.main_activity_btn_switch).setOnClickListener(this);
 
 
 
@@ -105,8 +107,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.main_activity_btn_times:
                 operation("times");
                 break;
+            case R.id.main_activity_btn_switch:
+                switch_calc();
+                break;
 
         }
+    }
+
+    private void switch_calc() {
+        pressClear();
+        //Change activity
+        Intent intent= new Intent(getApplicationContext(),BinaryActivity.class);
+        startActivity(intent);
     }
 
     private void pressResult() {
@@ -132,12 +144,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultado=num;
         }
         oper=op;
-
-
-
-
-
-
 
 
     }

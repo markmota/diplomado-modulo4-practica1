@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">practica1</string>
-    <string name="activity_main_message_error_div">Error: Division by zero is not permitted</string><string name="activity_main_message_error_mod">Error: Module of zero  is not permitted</string>
+    <string name="activity_main_message_error_div">Error: Division by zero is not permitted</string>
+    <string name="activity_main_message_error_mod">Error: Module of zero  is not permitted</string>
+    <string name="activity_binary_btn_calcDecimal">Switch to decimal calculator</string>
+    <string name="activity_main_btn_calcBinary">Switch to binary calculator</string>
 
 </resources>
